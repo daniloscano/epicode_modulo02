@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Job Search</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Job Search</h1>
+        <p class="subtitle">Search Algorithm</h2>
+    </header>
+    <div class="main">
+        <div class="search-container">
+            <p class="description">
+                Compila il form in basso.
+                <br>
+                Ti mostreremo le posizioni più rilevanti per la tua ricerca
+            </h3>
+            <form class="search-inputs">
+                    <input 
+                        name="job-title"
+                        class="text-input"
+                        id="job-title" 
+                        type="text"
+                        minlength="3"
+                        placeholder="Inserisci la posizione lavorativa">
+                    <input 
+                        name="job-location"
+                        class="text-input"
+                        id="job-location" 
+                        type="text"
+                        minlength="2"
+                        placeholder="Inserisci la nazione/regione/città">
+                <button class="btn search-btn" type="submit">Cerca il tuo nuovo lavoro</button>
+            </form>
+        </div>
+        <div class="results-container">
+            <div class="results-count">
+
+            </div>
+            <div class="results-wrapper">
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

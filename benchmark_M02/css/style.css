@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+header {
+    background-color: darkblue;
+    color: whitesmoke;
+    box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.13);
+    -webkit-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.13);
+}
+
+h1 {
+    padding: 1rem;
+}
+
+.subtitle {
+    padding: 0 1rem 0.5rem;
+}
+
+.main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.description {
+    text-align: center;
+    padding: 2rem;
+    font-size: 18px;
+}
+
+.search-container {
+    background-color: lightyellow;
+    margin: 2rem 0;
+    border: none;
+    border-radius: 16px;
+}
+
+.search-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1.4rem 2rem;
+}
+
+.text-input {
+    width: 16rem;
+    height: 40px;
+    border: solid 1px darkgoldenrod;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+#job-title:invalid, #job-location:invalid {
+    outline: solid 2px red;
+}
+
+.btn {
+    background-color: lightyellow;
+    border: solid 2px darkgoldenrod;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 40px;
+    padding: 4px 8px;
+}
+
+.btn:active {
+    background-color: darkgoldenrod;
+    border: solid 2px lightyellow;
+}
+
+.results-count {
+    padding: 1rem 0;
+}
+
+.message {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: grey;
+    padding: 8px 0;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.results-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.result-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.result-card:hover {
+    box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.13);
+    -webkit-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.13);
+    -moz-box-shadow: 0px 10px 17px 0px rgba(0,0,0,0.13);
+}
+
+.job-container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.card-title {
+    font-size: 20px;
+    padding-top: 8px;
+}
+
+.card-location {
+    font-size: 14px;
+    color: grey;
+    padding: 4px 0 16px;
+}
+
+.card-description {
+    font-size: 16px;
+}
+
+.go-to-job {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    color: rgba(0, 0, 139, 0.723);
+    font-size: 72px;
+}
+
+ion-icon {
+    cursor: pointer;
+}
